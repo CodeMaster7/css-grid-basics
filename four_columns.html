@@ -1,0 +1,60 @@
+<!-- https://www.youtube.com/watch?v=jV8B24rSN5o -->
+<!-- flexbox vs grid , 1 dimension vs 2 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Grid</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height:100vh;
+            overflow-y:hidden;
+        }
+
+        .grid>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .grid>div:nth-child(odd) {
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla est aliquam qui, blanditiis quidem nobis explicabo
+            quam ea voluptas rem eum quibusdam in corrupti atque fugiat dolor a repudiandae obcaecati. Consequatur veritatis
+            nemo unde hic eaque, doloremque, maiores temporibus sint recusandae asperiores quae deleniti quibusdam nulla
+            nobis suscipit aliquid, aut quas cupiditate accusamus. Libero qui minima, labore earum autem, aspernatur dolor
+            necessitatibus repudiandae blanditiis quaerat id, tenetur dolore magni sapiente eligendi cum expedita. Delectus
+            ipsum architecto natus consectetur dignissimos!
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestiae sit modi quasi totam quas, cumque consectetur
+            eum, amet, earum obcaecati? Tempore soluta doloribus dignissimos laudantium et, quibusdam explicabo repudiandae.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nulla est aliquam qui, blanditiis quidem nobis explicabo
+            quam ea voluptas rem eum quibusdam in corrupti atque fugiat dolor a repudiandae obcaecati. Consequatur veritatis
+            nemo unde hic eaque, doloremque, maiores temporibus sint recusandae asperiores quae deleniti quibusdam nulla
+            nobis suscipit aliquid, aut quas cupiditate accusamus. Libero qui minima, labore earum autem, aspernatur dolor
+            necessitatibus repudiandae blanditiis quaerat id, tenetur dolore magni sapiente eligendi cum expedita. Delectus
+            ipsum architecto natus consectetur dignissimos!
+        </div>
+        <div>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestiae sit modi quasi totam quas, cumque consectetur
+            eum, amet, earum obcaecati? Tempore soluta doloribus dignissimos laudantium et, quibusdam explicabo repudiandae.
+        </div>
+    </div>
+</body>
+
+</html>
